@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Факториал</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+    do {
+      var a = +prompt("Введите число для расчета его факториала: ");
+    } while (isNaN(a) || a == 0);
+    function factorial() {
+      var result = 1;
+      for (var i = 1; i <= a; i++) {
+        result = result * i;
+      }
+      return result;
+    }
+      document.write("Факториал от " + a + " равен " + factorial(a));
+    </script>
+
+  </body>
+</html>
